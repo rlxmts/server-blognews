@@ -7,7 +7,7 @@ class UsuarioController {
     static async buscaUsuarios(req, res) {
         try{
             const usuarios = await usuario.find();
-            res.status(200).json(usuarios);
+            res.status(200).json({Message : "Matheus Cruz é o unico usuario"});
         }catch(erro){
             console.log(erro);
         }
